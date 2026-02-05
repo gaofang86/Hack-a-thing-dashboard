@@ -1,0 +1,80 @@
+@import "tailwindcss";
+/* your custom css below */
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+.breathe {
+  animation: breathe 3.5s ease-in-out infinite;
+}
+
+/* ===== Global reset & base ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Scrollbar (optional but very nice) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; /* slate-700 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* slate-600 */
+}
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+} 
+:root {
+  --color-safe: 56 189 248;    /* sky-400 */
+  --color-warning: 251 191 36; /* amber-400 */
+  --color-risk: 244 63 94;     /* rose-500 */
+  --color-care: 236 72 153;    /* pink-500 */
+}
+.bg-safe {
+  background-color: rgb(var(--color-safe) / 0.25);
+}
+.text-safe {
+  color: rgb(var(--color-safe));
+}
+.bg-warning {
+  background-color: rgb(var(--color-warning) / 0.25);
+}
+.text-warning {
+  color: rgb(var(--color-warning));
+}
+.bg-risk {
+  background-color: rgb(var(--color-risk) / 0.25);
+}
+.text-risk {
+  color: rgb(var(--color-risk));
+}
+.bg-care {
+  background-color: rgb(var(--color-care) / 0.25);
+}
+.text-care {
+  color: rgb(var(--color-care));
+} 
